@@ -9,7 +9,7 @@ reset_git() {
   git init
 }
 
-git clone git@github.com:AkyraHub/kmonorepo-templates.git $CLIENT_NAME-$PROJECT_NAME
+git clone git@github.com:AkyraHub/monorepo-templates.git $CLIENT_NAME-$PROJECT_NAME
 cd $_
 
 pnpm install

@@ -19,4 +19,4 @@ sudo microk8s refresh-certs -e ca.crt
 sudo microk8s refresh-certs -e front-proxy-client.crt
 
 microk8s status --wait-ready
-microk8s config | sed "s/server: .*/server: https://$SERVER_DNS:16443/g"
+microk8s config | sed "s/server: .*/server: https:\/\/$SERVER_DNS:16443/g"

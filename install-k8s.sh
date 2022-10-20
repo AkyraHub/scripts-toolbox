@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-SERVER_IP=$1
-SERVER_DNS=$2
+export SERVER_IP=$1
+export SERVER_DNS=$2
 
 echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQChuWx2NbYtGv9P12Be/3u2PozQ7Dp1mLb9tb4y3bOZy/uSSuFKvErqqo1H2O9ktGNQuxYWZYBjbaVRG6ruo8n2uA3PTR4j52BetAwwyw7ZIK7lUg6BhJblA283S0haQsj1DwVIL2eLQAdMNsO8mO+bBBhs5bbYZVLIKkON0HVkK7+XCkko5Uh7Qx4dL4H4Tz1CVE+ShRW1eqJcS+ZOL3EX3iTUEcPQ5VL+fQWesr/+eLDn/c34luqnLuX/jPLEaVfp3Xb9dZsjpQoN38B0WNCTfLTArykLljrTvXEvmnTH6EHjhy+by1NOlQGvcQT58XPY950wKI1DEtzAuOXkmLBD tristandeoliveira@MacBook-Pro-de-Tristan.local" >> /home/ubuntu/.ssh/authorized_keys
 sudo snap install microk8s --classic --channel=1.24

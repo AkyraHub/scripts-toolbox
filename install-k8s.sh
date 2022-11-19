@@ -11,8 +11,8 @@ sudo su - $USER
 microk8s status --wait-ready
 microk8s enable dns storage
 
-sudo sed -i "/^IP\.2 = .*/a IP\.3 = $SERVER_IP" /var/snap/microk8s/current/certs/csr.conf.template
-sudo sed -i "/^DNS\.5 = .*/a DNS\.6 = $SERVER_DNS" /var/snap/microk8s/current/certs/csr.conf.template
+sed -i "/^IP\.2 = .*/a IP\.3 = $SERVER_IP" /var/snap/microk8s/current/certs/csr.conf.template
+sed -i "/^DNS\.5 = .*/a DNS\.6 = $SERVER_DNS" /var/snap/microk8s/current/certs/csr.conf.template
 
 sudo microk8s refresh-certs -e server.crt
 sudo microk8s refresh-certs -e ca.crt
